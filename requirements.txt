@@ -1,0 +1,6 @@
+aiohttp
+pandas
+beautifulsoup4
+pydantic
+pyyaml
+pyarrow

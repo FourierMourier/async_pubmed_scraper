@@ -1,0 +1,14 @@
+# ignore ide
+.idea/*
+.vs/*
+# ignore venv
+venv/*
+
+# ignore non-example configs:
+*.yaml
+!*.example.yaml
+*user_agent.txt
+# ignore any collected files since they may become too large
+collected_data/*
+*/**/*.parquet
+*/**/*.csv
