@@ -192,7 +192,10 @@ class StepByStepConfig(pydantic.BaseModel):
     check_interval: pydantic.PositiveFloat
     output_dir: str
 
-    @pydantic.validator('start_page')
+    # v1 style:
+    # @pydantic.validator('start_page')
+    # v2 style:
+    @pydantic.field_validator('start_page', mode='after')
     @classmethod
     def validate_start_page(cls, value):
         if value < 1 or value > 1000:
