@@ -3,7 +3,7 @@ max_agents_num: 110
 # sets the maximum number of concurrent HTTP requests that can be made while scraping
 max_concurrent_requests: 50
 # holds the search query or keyword that will be used for scraping data related
-query: "allergies"
+query: "allergies"  # can be anything you're going to query on pubmed
 # determines the total number of pages to scrape.  (`1000` is the max for pubmed common search)
 num_pages: 10
 # attribute specifies the starting page number for scraping; you may need to run several downloads
@@ -13,7 +13,7 @@ max_retries: 10
 # When set to true, it enables more detailed logging or output.
 verbose: true
 # holds the path to a file or resource that contains a list of user agent strings
-user_agents_list_path: null
+user_agents_list_path: path/to/your/agents_list.txt
 # defines the interval (in seconds) for checking sessions health
 check_interval: 10.0
 # sets the directory path where you'll get the results from pubmed
