@@ -79,13 +79,13 @@ for example, [here](https://seolik.ru/user-agents-list) or anywhere else you'd l
 
 
 ## Run
-To use it please edit copy example config file `main.example.yaml` to `main.yaml`, adjust your paths
+To use it, please copy the example config file main.example.yaml to main.yaml, and adjust your paths:
 ```yaml
 user_agents_list_path: path/to/your/agents_list.txt
 # sets the directory path where you'll get the results from pubmed
 output_dir: collected_data
 ```
-and then you can run `main.py`
+Then, you can run `main.py`.
 
 ## Some implementation notes
 
