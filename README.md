@@ -1,5 +1,31 @@
 # Pubmed Scraping
 
+This is an implementation of an Asynchronous Pubmed Scraper. 
+It allows for controlled concurrency and saves files in `.parquet` format, optimizing data storage efficiency.
+
+
+## Output File Columns
+
+| Column Name      | Description                                       |
+|------------------|---------------------------------------------------|
+| url              | The URL of the source document.                   |
+| pmid             | The PubMed ID of the document.                   |
+| abstract         | The abstract or summary of the document.         |
+| keywords         | Keywords associated with the document.            |
+| published_date   | The publication date of the document.            |
+| citation_doi     | The DOI (Digital Object Identifier) of the document citation. |
+| journal          | The journal where the document was published.    |
+| volume           | The volume of the journal where the document was published. |
+| issue            | The issue number of the journal.                 |
+| pages            | The page numbers of the document in the journal. |
+
+
+## Table example
+
+| url             | pmid      | abstract                                      | keywords        | published_date | citation_doi       | journal            | volume | issue | pages |
+|-----------------|-----------|----------------------------------------------|-----------------|----------------|--------------------|--------------------|--------|-------|-------|
+| Example URL     | 123456    | This is an example abstract for documentation purposes. | keyword1, keyword2 | 2023-09-21     | 10.12345/example   | Example Journal    | 42     | 3     | 101-120 |
+
 ## Clone project
 
 
@@ -83,3 +109,10 @@ By the way,
 3) some pages indeed do NOT have abstract content so you might see smth like 
    "...doesn't have abstract-content selected!" in the terminal
 
+
+# License
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
+
+# Acknowledgments
+This README was created with the assistance of OpenAI's ChatGPT (September 25 Version), a large language model.
+You can learn more about it [here](https://chat.openai.com/chat)
